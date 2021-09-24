@@ -15,8 +15,7 @@ import time
 import os
 import altair as alt
 
-#api_key=os.getenv(ALPHAVANTAGE_API_KEY)
-api_key="14BSIHSALEHSPS93"
+api_key=os.getenv(ALPHAVANTAGE_API_KEY)
 
 def request_stock_price_hist_for_100days(symbol, token):
     url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={}&apikey={}'
